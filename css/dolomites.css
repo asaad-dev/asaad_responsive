@@ -1,9 +1,9 @@
-* {
-    box-sizing: border-box;
-}
+/* mes styles  */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background: pink;
+    box-sizing: border-box;
+
 }
 
 .violet {
@@ -19,13 +19,22 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+nav {
+    height: 80px;
+    margin-bottom: 10px;
+    line-height: 80px;
+}
 
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+}
 /* la classe pour créer une rangée */
 .row {
     display: flex;
     flex-direction: row;
 }
-
+/* mettre le footer en bas */
 footer {
     flex-shrink: 0;
 }
@@ -155,4 +164,24 @@ main {
 /* pour les titres de la page */
 h1 {
     text-align: center;
+}
+/* les régles de médias queries pour le responsive et les différents écrans */
+
+/* les régels pour les tablette et certains ordinateurs portables */
+@media (min-width: 768px) and (max-width: 1096px) {
+    body {
+        background: orange;
+    }
+}
+
+/* écrans ordinateurs de bureau, tous les écrans plus grand que 1097*/
+@media (min-width: 1097px) {
+    body {
+        background: #fff;
+    }
+    .conteneur {
+        width: 1200px;
+        margin: 0 auto;
+        border: 1px solid #000;
+    }
 }
