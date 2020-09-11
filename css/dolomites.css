@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: pink;
+}
+
+.violet {
+    background: purple;
+    color: #fff;
+}
+/* le conteneur et sa largeur et auto center*/
+.conteneur {
+    margin: 0 auto;
+    width: 1000px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* la classe pour créer une rangée */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    flex-shrink: 0;
+}
+main {
+    flex: 1;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-revers {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.bleu-leger {
+    background: lightskyblue;
+}
+
+.vert {
+    background: #2DB34A;
+    color: #fff;
+    
+}
+
+.or {
+    background: #f4f19a;
+}
+/* les grille sur 12 colonnes */
+/* Définition de la largeur des colonnes en % */
+.col-1 {
+    width: 8.333333%;
+    padding: 4px;
+}
+.col-2 {
+    width: 16.666666%;
+    padding: 4px;
+}
+.col-3 {
+    width: 25%;
+    padding: 4px;
+}
+.col-4 {
+    width: 33.333333%;
+    padding: 4px;
+}
+.col-5 {
+    width: 41.666666%;
+    padding: 4px;
+}.col-6 {
+    width: 50%;
+    padding: 4px;
+
+}
+.col-7 {
+    width: 58.333333%;
+    padding: 4px;
+
+}
+.col-8 {
+    width: 66.666666%;
+    padding: 4px;
+
+}
+.col-9 {
+    width: 75%;
+    padding: 4px;
+
+}
+.col-10 {
+    width: 83.333333%;
+    padding: 4px;
+
+}
+.col-11 {
+    width: 91.666666%;
+    padding: 4px;
+
+}
+.col-12 {
+    width: 100%;
+    padding: 4px;
+
+}
+
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.66666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}
+
+/* pour les titres de la page */
+h1 {
+    text-align: center;
+}
