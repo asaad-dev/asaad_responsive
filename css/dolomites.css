@@ -1,8 +1,8 @@
 /* mes styles  */
 body {
     font-family: 'Raleway', sans-serif;
-    background: pink;
     box-sizing: border-box;
+    background: #fff;
 
 }
 
@@ -14,7 +14,6 @@ body {
 .conteneur {
     margin: 0 auto;
     width: 1000px;
-    background: #fff;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -23,6 +22,8 @@ nav {
     height: 80px;
     margin-bottom: 10px;
     line-height: 80px;
+    background: pink;
+    margin: 10px;
 }
 
 #menu {
@@ -167,21 +168,82 @@ h1 {
 }
 /* les régles de médias queries pour le responsive et les différents écrans */
 
+/* pour les téléphone  */
+
+@media (max-width: 320px) {
+    body {
+        background: #fff;
+    }
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: yellow;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+    .colonne-xs {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* pour les petites tablettes et les smartphones avec grands écrans, les phablette*/
+@media (min-width: 321px) and (max-width: 767px) {
+    body {
+        background: #fff;
+    }
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background: #693d4f;
+    }
+    .row {
+        display: flex;
+        direction: row;
+        flex-wrap: wrap;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+    /* pour le footer */
+    .colonne-sm {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /* les régels pour les tablette et certains ordinateurs portables */
 @media (min-width: 768px) and (max-width: 1096px) {
-    body {
+    .conteneur {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
         background: orange;
     }
 }
 
 /* écrans ordinateurs de bureau, tous les écrans plus grand que 1097*/
 @media (min-width: 1097px) {
-    body {
+    body{
         background: #fff;
     }
     .conteneur {
         width: 1200px;
         margin: 0 auto;
         border: 1px solid #000;
+        background: #e5dbee;
     }
 }
